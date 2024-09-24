@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Table</title>
+    <meta name="author" content="Albin Garcia">
+    <meta name="description" content="ComplexTable">
+
+    
+
+    <style>
+        .colorbox{
+            background-color: lightsteelblue;  /* was not able to find the right blue */
+        }
+        .numalign{
+            text-align: right;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="index.html">Intro Page</a> |
+    <a href="complextable.html">Complex Table</a> 
+    
+
+    <table border="1" style="border-collapse:collapse;border: 1px solid black; width: 800px; margin: 0 auto;" cellpadding="10px">
+        <caption>A Complex Table</caption>
+        <tr class="colorbox">
+            <td colspan="3"><b>Invoice #ABC123XYZ098</b></td>
+            <td colspan="1"><b>September 22, 2024</b></td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Pay to:</b> <br>
+                Acme Billing Co. <br>
+                199 Chambers St. <br>
+                Brooklyn, NY 12345 <br>
+            </td>
+            <td colspan="2"> <b>Customer:</b> <br>
+                Albin Garcia <br>
+                321 Willow Way <br>
+                Bronx, NY 54321 <br>
+
+            </td>
+        </tr>
+        <tr class="colorbox">
+            <td><b>Name/Description</b></td>
+            <td><b>Qty.</b></td>
+            <td><b>Unit Price</b></td>
+            <td><b>Cost</b></td>
+        </tr>
+        <tr>
+            <td>Paperclips</td>
+            <td class="numalign">1000</td>
+            <td class="numalign">0.01</td>
+            <td class="numalign">10.00</td>
+        </tr>
+        <tr>
+            <td>Staples(box)</td>
+            <td class="numalign">100</td>
+            <td class="numalign">1.00</td>
+            <td class="numalign">100.00</td>
+        </tr>
+        <tr>
+            <td class="colorbox"  colspan="3"><b>Subtotal</b></td>
+            <td class="numalign">110.00</td>
+        </tr>
+        <tr>
+            <td class="colorbox" colspan="2"><b>Tax</b></td>
+            <td class="numalign">8%</td>
+            <td class="numalign">8.80</td>
+        </tr>
+        <tr>
+            <td class="colorbox" colspan="3"><b>Grand Total</b></td>
+            <td class="numalign">$ 118.80</td>
+        </tr>
+
+
+
+
+
+
+    </table>
+    
+</body>
+</html>
