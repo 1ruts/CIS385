@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Albin Garcia">
+    <meta name="description" content="fixing cookie manager">
+    <title>Cookie Manager</title>
+
+    <style type="text/css">
+        table,
+        td,
+        input[type="button"],
+        input[type="text"] {
+            border: solid black 2px;
+            font-size: 1.5em;
+        }
+
+        .division {
+            border: solid black 2px;
+            background-color: #cccccc;
+            margin: 2px;
+            padding: 1px;
+            font-size: small;
+        }
+
+        th {
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 4px;
+        }
+
+        div.v0 {
+            width: 100%;
+        }
+
+        div.v1 {
+            width: 50%;
+            margin: 0px auto;
+            background-color: #eeeeee; 
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="division" style="font-size:1.5em;text-align:center;
+            background:black; color:white;">
+        COOKIE MANAGER
+    </div>
+    <div class="division">
+        Name: <input id="cname" type="text" size="10">
+        Value: <input id="cvalue" type="text" size="10">
+        <input type="button" value="SetCookie" onClick="create();
+            details()" />
+        <input type="button" value="Clear" onClick="clearbox('cname');
+            clearbox('cvalue');" />
+    </div>
+    <div class="division">
+        Name: <input id="cname2" type="text" size="10">
+        Value: <input id="cvalue2" type="text" size="10">
+        <input type="button" value="GetCookie" onClick="findcookie()" />
+        <input type="button" value="Clear" onClick="clearbox('cname2');
+                                  clearbox('cvalue2');" />
+    </div>
+    <div class="division">
+        Name: <input id="cname3" type="text" size="10">
+        <input type="button" value="DelCookie" onClick="deleteCookie();details();" />
+        <input type="button" value="Clear" onClick="clearbox('cname3');" />
+    </div>
+    <div class="division">
+        <input id="raw" type="text" size="50">
+        <input type="button" value="RawCookie" onClick="raw();details();" />
+        <input type="button" value="Clear" onClick="clearbox('raw');" />
+    </div>
+    <div id="info" class="division"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
