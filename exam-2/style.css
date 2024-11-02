@@ -1,0 +1,23 @@
+
+body{
+    background-color: blue;
+}
+.box{
+    text-align: center;
+    background-color:black;
+    color: orange;
+    padding: 10px;
+   
+}
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #00ff2a; 
+    margin: 20px 0; 
+}
+h1{
+    color: red;
+}
+ul{
+    padding: 10px;
+}
